@@ -1,0 +1,1210 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    >
+
+    <meta
+        name="theme-color"
+        content="#ffdce9"
+    >
+
+    <title>Для Альнурчика 🤍</title>
+
+    <!-- ВЕСЬ ДИЗАЙН -->
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+    <!-- ВСЯ ЛОГИКА -->
+    <script
+        src="script.js"
+        defer
+    ></script>
+
+</head>
+
+
+<body>
+
+
+<div class="app">
+
+    <div class="app-shell">
+
+
+        <!-- ============================================
+             ДЕКОР ФОНА
+        ============================================= -->
+
+        <div
+            class="background-decor"
+            aria-hidden="true"
+        >
+
+            <span>♡</span>
+            <span>♥</span>
+            <span>♡</span>
+            <span>♥</span>
+
+        </div>
+
+
+
+        <!-- ============================================
+             1. ПРИГЛАШЕНИЕ
+        ============================================= -->
+
+        <section
+            class="screen active"
+            id="screen-intro"
+            data-screen="intro"
+        >
+
+            <div class="screen-inner">
+
+
+                <p class="eyebrow">
+                    приглашение 💌
+                </p>
+
+
+                <!-- ВАШИ ФОТО ПОТОМ -->
+
+                <div class="couple-photos">
+
+
+                    <div class="photo-card">
+
+                        <div class="photo-placeholder">
+
+                            <img
+                                 src="assets/photos/couple-1.png"
+                                 alt="Медведики💖 "
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="photo-card">
+
+                        <div class="photo-placeholder">
+
+                            <img
+                                 src="assets/photos/couple-2.png"
+                                  alt="МЫ💘"
+                             >
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+                <img
+                    class="bear bear-love"
+                    src="assets/bears/bear-love.png"
+                    alt="Медвежонок с сердечком"
+                >
+
+
+                <h1>
+                    Алькоша,<br>
+                    у меня к тебе вопрос 👉👈
+                </h1>
+
+
+                <p class="subtitle">
+                    пойдёшь со мной на свидание? 💝
+                </p>
+
+
+                <div class="screen-spacer"></div>
+
+
+                <div class="intro-buttons">
+
+
+                    <button
+                        class="main-button"
+                        type="button"
+                        data-next="date"
+                    >
+                        дааа 🧸💕
+                    </button>
+
+
+                    <div class="no-button-zone">
+
+                        <button
+                            class="no-button"
+                            id="noButton"
+                            type="button"
+                        >
+                            м нет 
+                        </button>
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ============================================
+             2. ДАТА
+        ============================================= -->
+
+        <section
+            class="screen"
+            id="screen-date"
+            data-screen="date"
+        >
+
+            <div class="screen-inner">
+
+
+                <header class="screen-header">
+
+                    <button
+                        class="back-button"
+                        type="button"
+                        data-back="intro"
+                    >
+                        ←
+                    </button>
+
+
+                    <div class="progress">
+
+                        <span class="progress-dot active"></span>
+                        <span class="progress-dot"></span>
+                        <span class="progress-dot"></span>
+                        <span class="progress-dot"></span>
+                        <span class="progress-dot"></span>
+
+                    </div>
+
+
+                    <div class="header-space"></div>
+
+                </header>
+
+
+                <p class="eyebrow">
+                    шаг 1
+                </p>
+
+
+                <img
+                    class="bear bear-small"
+                    src="assets/bears/bear-idle.png"
+                    alt="Медвежонок"
+                >
+
+
+                <h2>
+                    когда тебе<br>
+                    будет удобно?
+                </h2>
+
+
+                <p class="subtitle">
+                    выбери наш день 💗
+                </p>
+
+
+                <div class="field">
+
+                    <label for="dateInput">
+                        дата
+                    </label>
+
+                    <input
+                        type="date"
+                        id="dateInput"
+                    >
+
+                </div>
+
+
+                <div class="screen-spacer"></div>
+
+
+                <button
+                    class="main-button"
+                    id="dateNext"
+                    type="button"
+                >
+                    мхм дальше →
+                </button>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ============================================
+             3. ВРЕМЯ
+        ============================================= -->
+
+        <section
+            class="screen"
+            id="screen-time"
+            data-screen="time"
+        >
+
+            <div class="screen-inner">
+
+
+                <header class="screen-header">
+
+                    <button
+                        class="back-button"
+                        type="button"
+                        data-back="date"
+                    >
+                        ←
+                    </button>
+
+
+                    <div class="progress">
+
+                        <span class="progress-dot active"></span>
+                        <span class="progress-dot active"></span>
+                        <span class="progress-dot"></span>
+                        <span class="progress-dot"></span>
+                        <span class="progress-dot"></span>
+
+                    </div>
+
+
+                    <div class="header-space"></div>
+
+                </header>
+
+
+                <p class="eyebrow">
+                    шаг 2
+                </p>
+
+
+                <img
+                    class="bear bear-small"
+                    src="assets/bears/bear-idle.png"
+                    alt="Медвежонок"
+                >
+
+
+                <h2>
+                    а во сколько?
+                </h2>
+
+
+                <p class="subtitle">
+                    чтобы я знала, когда начинать тебя ждать 🧸
+                </p>
+
+
+                <div class="field">
+
+                    <label for="timeInput">
+                        время
+                    </label>
+
+                    <input
+                        type="time"
+                        id="timeInput"
+                    >
+
+                </div>
+
+
+                <div class="screen-spacer"></div>
+
+
+                <button
+                    class="main-button"
+                    id="timeNext"
+                    type="button"
+                >
+                    дальше, Мурзик →
+                </button>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ============================================
+             4. МЕСТО ВСТРЕЧИ
+        ============================================= -->
+
+        <section
+            class="screen"
+            id="screen-place"
+            data-screen="place"
+        >
+
+            <div class="screen-inner">
+
+
+                <header class="screen-header">
+
+                    <button
+                        class="back-button"
+                        type="button"
+                        data-back="time"
+                    >
+                        ←
+                    </button>
+
+
+                    <div class="progress">
+
+                        <span class="progress-dot active"></span>
+                        <span class="progress-dot active"></span>
+                        <span class="progress-dot active"></span>
+                        <span class="progress-dot"></span>
+                        <span class="progress-dot"></span>
+
+                    </div>
+
+
+                    <div class="header-space"></div>
+
+                </header>
+
+
+                <p class="eyebrow">
+                    шаг 3
+                </p>
+
+
+                <img
+                    class="bear bear-small"
+                    src="assets/bears/bear-idle.png"
+                    alt="Медвежонок"
+                >
+
+
+                <h2>
+                    где встретимся?
+                </h2>
+
+
+                <p class="subtitle">
+                    место встречи выбираешь ты 📍
+                </p>
+
+
+                <div class="field">
+
+                    <label for="placeInput">
+                        место встречи
+                    </label>
+
+                    <input
+                        type="text"
+                        id="placeInput"
+                        placeholder="напиши место..."
+                        maxlength="150"
+                        autocomplete="off"
+                    >
+
+                </div>
+
+
+                <div class="screen-spacer"></div>
+
+
+                <button
+                    class="main-button"
+                    id="placeNext"
+                    type="button"
+                >
+                    мхм, дальше →
+                </button>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ============================================
+             5. ЧЕГО ХОЧЕТСЯ
+        ============================================= -->
+
+        <section
+            class="screen"
+            id="screen-wish"
+            data-screen="wish"
+        >
+
+            <div class="screen-inner">
+
+
+                <header class="screen-header">
+
+                    <button
+                        class="back-button"
+                        type="button"
+                        data-back="place"
+                    >
+                        ←
+                    </button>
+
+
+                    <div class="progress">
+
+                        <span class="progress-dot active"></span>
+                        <span class="progress-dot active"></span>
+                        <span class="progress-dot active"></span>
+                        <span class="progress-dot active"></span>
+                        <span class="progress-dot"></span>
+
+                    </div>
+
+
+                    <div class="header-space"></div>
+
+                </header>
+
+
+                <p class="eyebrow">
+                    шаг 4
+                </p>
+
+
+                <img
+                    class="bear bear-small"
+                    src="assets/bears/bear-idle.png"
+                    alt="Медвежонок"
+                >
+
+
+                <h2>
+                    чего тебе<br>
+                    хочется?
+                </h2>
+
+
+                <p class="subtitle">
+                    Любое все что ты хочешь, любимый мой 😉
+                </p>
+
+
+                <div class="field">
+
+                    <label for="wishInput">
+                        твой вариант
+                    </label>
+
+                    <textarea
+                        id="wishInput"
+                        placeholder="напиши..."
+                        maxlength="500"
+                    ></textarea>
+
+                </div>
+
+
+                <div class="screen-spacer"></div>
+
+
+                <button
+                    class="main-button"
+                    id="wishNext"
+                    type="button"
+                >
+                    дальше, Солнышко→
+                </button>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ============================================
+             6. ПРИЧЁСКА
+        ============================================= -->
+
+        <section
+            class="screen"
+            id="screen-hair"
+            data-screen="hair"
+        >
+
+            <div class="screen-inner">
+
+
+                <header class="screen-header">
+
+                    <button
+                        class="back-button"
+                        type="button"
+                        data-back="wish"
+                    >
+                        ←
+                    </button>
+
+
+                    <div class="progress">
+
+                        <span class="progress-dot active"></span>
+                        <span class="progress-dot active"></span>
+                        <span class="progress-dot active"></span>
+                        <span class="progress-dot active"></span>
+                        <span class="progress-dot active"></span>
+
+                    </div>
+
+
+                    <div class="header-space"></div>
+
+                </header>
+
+
+                <p class="eyebrow">
+                    последний выбор
+                </p>
+
+
+                <h2>
+                    какую мне сделать<br>
+                    причёску?
+                </h2>
+
+
+                <p class="subtitle">
+                    всё остальное будет сюрпризом 🤫
+                </p>
+
+
+                <div class="hair-grid">
+
+
+                    <button
+                        class="hair-card"
+                        type="button"
+                        data-hair="Вариант 1"
+                    >
+                        
+                        <div class="hair-image">
+
+                            <img
+                                src = "assets/hair/hair-1.png"
+                                alt = "hair 1"
+                            >    
+                        </div>
+
+                        <span>
+                            вариант 1
+                        </span>
+
+                    </button>
+
+
+                    <button
+                        class="hair-card"
+                        type="button"
+                        data-hair="Вариант 2"
+                    >
+
+                        <div class="hair-image">
+                             <img
+                                src = "assets/hair/hair-2.png"
+                                alt = "hair 1"
+                            >    
+                        </div>
+
+                        <span>
+                            вариант 2
+                        </span>
+
+                    </button>
+
+
+                    <button
+                        class="hair-card"
+                        type="button"
+                        data-hair="Вариант 3"
+                    >
+
+                        <div class="hair-image">
+                             <img
+                                src = "assets/hair/hair-3.png"
+                                alt = "hair 1"
+                            >    
+                        </div>
+
+                        <span>
+                            вариант 3
+                        </span>
+
+                    </button>
+
+
+                </div>
+
+
+                <div class="screen-spacer"></div>
+
+
+                <button
+                    class="main-button"
+                    id="hairNext"
+                    type="button"
+                >
+                    готово →
+                </button>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ============================================
+             7. КОРМЛЕНИЕ МИШКИ
+        ============================================= -->
+
+        <section
+            class="screen"
+            id="screen-feed"
+            data-screen="feed"
+        >
+
+            <div class="screen-inner">
+
+
+                <header class="screen-header">
+
+                    <button
+                        class="back-button"
+                        type="button"
+                        data-back="hair"
+                    >
+                        ←
+                    </button>
+
+
+                    <div></div>
+
+                    <div class="header-space"></div>
+
+                </header>
+
+
+                <p class="eyebrow">
+                    стоп...
+                </p>
+
+
+                <h2>
+                    я хочу кушатки м 🥺
+                </h2>
+
+
+                <p class="subtitle">
+                    возьми вкусняшку и покорми Видмедика 
+                </p>
+
+
+                <div
+                    class="bear-zone"
+                    id="bearZone"
+                >
+
+                    <img
+                        class="feeding-bear"
+                        id="feedingBear"
+                        src="assets/bears/bear-hungry.png"
+                        alt="Голодный медвежонок"
+                    >
+
+                </div>
+
+
+                <p
+                    class="feed-message"
+                    id="feedMessage"
+                >
+                    что будем кушать? ♡
+                </p>
+
+
+                <div class="food-grid">
+
+
+                    <button
+                        class="food-item"
+                        type="button"
+                        data-food="banana"
+                        data-name="банан"
+                        data-image="assets/food/banana.png"
+                    >
+
+                        <img
+                            src="assets/food/banana.png"
+                            alt="Банан"
+                        >
+
+                        <span>
+                            панан
+                        </span>
+
+                    </button>
+
+
+
+                    <button
+                        class="food-item"
+                        type="button"
+                        data-food="strawberry"
+                        data-name="клубника"
+                        data-image="assets/food/strawberry.png"
+                    >
+
+                        <img
+                            src="assets/food/strawberry.png"
+                            alt="Клубника"
+                        >
+
+                        <span>
+                            кумника
+                        </span>
+
+                    </button>
+
+
+
+                    <button
+                        class="food-item"
+                        type="button"
+                        data-food="honey-cake"
+                        data-name="медовик"
+                        data-image="assets/food/honey-cake.png"
+                    >
+
+                        <img
+                            src="assets/food/honey-cake.png"
+                            alt="Медовик"
+                        >
+
+                        <span>
+                            медовичок <br> как зимой
+                        </span>
+
+                    </button>
+
+
+
+                    <button
+                        class="food-item"
+                        type="button"
+                        data-food="chocolate-cake"
+                        data-name="шоколадный торт"
+                        data-image="assets/food/chocolate-cake.png"
+                    >
+
+                        <img
+                            src="assets/food/chocolate-cake.png"
+                            alt="Шоколадный торт"
+                        >
+
+                        <span>
+                            шошоладный <br> тортик 
+                        </span>
+
+                    </button>
+
+
+
+                    <button
+                        class="food-item"
+                        type="button"
+                        data-food="cupcake"
+                        data-name="кексик"
+                        data-image="assets/food/cupcake.png"
+                    >
+
+                        <img
+                            src="assets/food/cupcake.png"
+                            alt="Кексик"
+                        >
+
+                        <span>
+                            кексик
+                        </span>
+
+                    </button>
+
+
+
+                    <button
+                        class="food-item"
+                        type="button"
+                        data-food="caviar-toast"
+                        data-name="хлебушек с икрой"
+                        data-image="assets/food/caviar-toast.png"
+                    >
+
+                        <img
+                            src="assets/food/caviar-toast.png"
+                            alt="Хлебушек с икрой"
+                        >
+
+                        <span>
+                            хлебушек<br>с икрой
+                        </span>
+
+                    </button>
+
+
+
+                    <button
+                        class="food-item"
+                        type="button"
+                        data-food="olivier"
+                        data-name="оливье"
+                        data-image="assets/food/olivier.png"
+                    >
+
+                        <img
+                            src="assets/food/olivier.png"
+                            alt="Оливье"
+                        >
+
+                        <span>
+                            оливье
+                        </span>
+
+                    </button>
+
+
+
+                    <button
+                        class="food-item"
+                        type="button"
+                        data-food="pizza"
+                        data-name="пицца"
+                        data-image="assets/food/pizza.png"
+                    >
+
+                        <img
+                            src="assets/food/pizza.png"
+                            alt="Пицца"
+                        >
+
+                        <span>
+                            додо-пицца
+                        </span>
+
+                    </button>
+
+
+                </div>
+
+
+                <p class="feed-hint">
+                    кормить можно сколько угодно ♡
+                </p>
+
+
+                <div class="screen-spacer"></div>
+
+
+                <button
+                    class="main-button"
+                    id="feedNext"
+                    type="button"
+                >
+                    дальше Видмедик →
+                </button>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ============================================
+             8. ИТОГ
+        ============================================= -->
+
+        <section
+            class="screen"
+            id="screen-summary"
+            data-screen="summary"
+        >
+
+            <div class="screen-inner">
+
+
+                <header class="screen-header">
+
+                    <button
+                        class="back-button"
+                        type="button"
+                        data-back="feed"
+                    >
+                        ←
+                    </button>
+
+
+                    <div></div>
+
+                    <div class="header-space"></div>
+
+                </header>
+
+
+                <img
+                    class="bear bear-happy"
+                    src="assets/bears/bear-happy.png"
+                    alt="Счастливый медвежонок"
+                >
+
+
+                <p class="eyebrow">
+                    наше свидание 💌
+                </p>
+
+
+                <h2>
+                    всё правильно?
+                </h2>
+
+
+                <div class="date-ticket">
+
+
+                    <div class="ticket-row">
+
+                        <span>
+                            📅
+                        </span>
+
+                        <span class="ticket-label">
+                            дата
+                        </span>
+
+                        <strong
+                            id="summaryDate"
+                        >
+                            —
+                        </strong>
+
+                    </div>
+
+
+                    <div class="ticket-row">
+
+                        <span>
+                            🕐
+                        </span>
+
+                        <span class="ticket-label">
+                            время
+                        </span>
+
+                        <strong
+                            id="summaryTime"
+                        >
+                            —
+                        </strong>
+
+                    </div>
+
+
+                    <div class="ticket-row">
+
+                        <span>
+                            📍
+                        </span>
+
+                        <span class="ticket-label">
+                            место
+                        </span>
+
+                        <strong
+                            id="summaryPlace"
+                        >
+                            —
+                        </strong>
+
+                    </div>
+
+
+                    <div class="ticket-row">
+
+                        <span>
+                            💭
+                        </span>
+
+                        <span class="ticket-label">
+                            хочется
+                        </span>
+
+                        <strong
+                            id="summaryWish"
+                        >
+                            —
+                        </strong>
+
+                    </div>
+
+
+                    <div class="ticket-row">
+
+                        <span>
+                            🎀
+                        </span>
+
+                        <span class="ticket-label">
+                            причёска
+                        </span>
+
+                        <strong
+                            id="summaryHair"
+                        >
+                            —
+                        </strong>
+
+                    </div>
+
+
+                    <div class="ticket-row">
+
+                        <span>
+                            🎁
+                        </span>
+
+                        <span class="ticket-label">
+                            остальное
+                        </span>
+
+                        <strong>
+                            сюрприз, ну почти 😘
+                        </strong>
+
+                    </div>
+
+
+                </div>
+
+
+                <div class="screen-spacer"></div>
+
+
+                <button
+                    class="main-button"
+                    id="confirmButton"
+                    type="button"
+                >
+                    подтверждаю свидание пуфыстыми лапками 🧸
+                </button>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ============================================
+             9. ФИНАЛ
+        ============================================= -->
+
+        <section
+            class="screen"
+            id="screen-final"
+            data-screen="final"
+        >
+
+            <div class="screen-inner final-screen">
+
+
+                <div class="final-heart">
+                    💗
+                </div>
+
+
+                <img
+                    class="bear bear-love"
+                    src="assets/bears/bear-love.png"
+                    alt="Медвежонок с сердечком"
+                >
+
+
+                <p class="eyebrow">
+                    для тебя
+                </p>
+
+
+                <h2>
+                    до встречи,<br>
+                    видмедик ♡
+                </h2>
+
+
+                <div class="love-message">
+                    давай хорошо проведем время вместе ♡
+                </div>
+
+
+                <p class="final-love">
+                    я тебя очень сильно люблю, жизнь моя ♡
+                </p>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ============================================
+             ВСПЛЫВАЮЩИЕ ПОДСКАЗКИ
+        ============================================= -->
+
+        <div
+            class="toast"
+            id="toast"
+        ></div>
+
+
+    </div>
+
+</div>
+
+
+</body>
+
+</html>
